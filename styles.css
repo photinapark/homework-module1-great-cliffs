@@ -63,6 +63,17 @@
     .main-menu ul li.active a {
         color: #fff;
     }
+    #timeofday {
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(rgba(118, 213, 245, 1) 0%, rgba(251, 215, 139, 1) 100%);
+        padding: 20px;
+        text-align: center;
+        color:#3a3a3a
+    }
+    #clock {
+        color:#125688
+    }
+
     /* Main */
     main {
         width: 1300px;
