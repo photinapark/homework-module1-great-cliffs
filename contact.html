@@ -26,7 +26,6 @@
                         <li class="active"><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>                    
-                
             </div>
         </header>
         <main>
@@ -90,7 +89,7 @@
 
         <section>
             <ul id="partners">
-                <li class="partner">
+                <!--<li class="partner">
                     <img src="images/partners/partner-bustour.png" alt="Partner Bus Tours">
                 </li>
 
@@ -112,7 +111,7 @@
 
                 <li class="partner">
                     <img src="images/partners/partner-tourgroup.png" alt="Partner Tour Group">
-                </li>
+                </li>-->
             </ul>
         </section>
         <footer>
@@ -131,5 +130,35 @@
             </div>
         </footer>
     </div>
+
+    <script>
+    var partners = [];
+    var imageList = [];
+    var image;
+    var openList = "<li class='partner'>";
+    var closeList = "</li>";
+
+    partners.push("partner-bustour");
+    partners.push("partner-cabinrental");
+    partners.push("partner-campingadv");
+    partners.push("partner-collegetours");
+    partners.push("partner-rentalbike");
+    partners.push("partner-tourgroup");
+
+    for (var i = 0; i < partners.length; i++) {
+        image = openList +
+                "<img src='images/partners/" +
+                partners[i] +
+                ".png'>" +
+                closeList;
+
+        imageList.push(image);
+    }
+
+    imageList = imageList.join("");
+
+    document.getElementById("partners").innerHTML = imageList;
+</script>
+
 </body>
 </html>
