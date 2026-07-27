@@ -80,8 +80,16 @@
                     <textarea></textarea>
                 </div>
 
+               <!--Random Codes-->
+               <div class="randomcode">
+                <input type="text"
+                name="randomcode"
+                placeholder="Enter characters">
+                <p id="codes"></p>
+               </div>
+
                 <div class="button">
-                    <input type="submit" value="Inquire">
+                    <input type="submit" id="submit" value="Inquire">
                 </div> 
             </fieldset>  
             </form>
@@ -131,34 +139,9 @@
         </footer>
     </div>
 
-    <script>
-    var partners = [];
-    var imageList = [];
-    var image;
-    var openList = "<li class='partner'>";
-    var closeList = "</li>";
-
-    partners.push("partner-bustour");
-    partners.push("partner-cabinrental");
-    partners.push("partner-campingadv");
-    partners.push("partner-collegetours");
-    partners.push("partner-rentalbike");
-    partners.push("partner-tourgroup");
-
-    for (var i = 0; i < partners.length; i++) {
-        image = openList +
-                "<img src='images/partners/" +
-                partners[i] +
-                ".png'>" +
-                closeList;
-
-        imageList.push(image);
-    }
-
-    imageList = imageList.join("");
-
-    document.getElementById("partners").innerHTML = imageList;
-</script>
+    <!-- Partners -->
+    <script src="js/site_scripts.js"> </script>
+    <script src="js/randomcodes.js"></script>
 
 </body>
 </html>
