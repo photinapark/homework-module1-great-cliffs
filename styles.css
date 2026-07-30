@@ -200,6 +200,10 @@
         background: #BDE1FF;
     }
 
+    .highlight {
+    background-color: #9ed034;
+    }
+
     /* Contact Page */ 
     #contact main h1 {
         font-family: Arial, Helvetica, sans-serif;
