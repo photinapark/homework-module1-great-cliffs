@@ -1,4 +1,4 @@
-    /* Heder */
+/* Header */
     header {
         width: 100%;
         min-height: 400px;
@@ -37,7 +37,8 @@
         margin-left: 227px;
         font-weight: 400;
     }
-    /* Navigation */
+    
+/* Navigation */
     .main-menu ul li {
         list-style-type: none;
         display: inline-block;
@@ -74,7 +75,7 @@
         color:#125688
     }
 
-    /* Main */
+/* Main */
     main {
         width: 1300px;
         margin: 5em auto 0 auto;
@@ -117,7 +118,8 @@
         width: 90px;
         height: 90px;
     }
-    /* Footer */
+    
+/* Footer */
     footer {
         width: 100%;
         height: 155px;
@@ -163,7 +165,7 @@
         color: white;
     }
 
-    /* Activities Table */
+/* Activities Table */
     table {
         width: 100%;
         margin: 4em auto 4em auto;
@@ -204,7 +206,36 @@
     background-color: #9ed034;
     }
 
-    /* Contact Page */ 
+    #activities main #displaySelected {
+    visibility: hidden;
+    margin: 0 auto;
+    width: 600px;
+    border: 2px solid #9ed034;
+    padding: 0.75em;
+    }
+
+    #activities main #displaySelected #result,
+    #activities main #displaySelected #sendinfo {
+        display: inline-block;
+        margin: 0;
+    }
+
+    #activities main #result {
+        min-height: 50px;
+        width: 300px;
+        padding: 0;
+    }
+
+    #activities main #result h4 {
+        margin-bottom: 1em;
+        font-size: 1.15em;
+    }
+
+    #activities main #displaySelected #sendinfo input[type="email"] {
+        width: 200px;
+    }
+
+/* Contact Page */ 
     #contact main h1 {
         font-family: Arial, Helvetica, sans-serif;
         color:#9ed034;
